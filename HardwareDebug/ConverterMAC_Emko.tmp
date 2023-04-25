@@ -1,0 +1,10 @@
+-MAKEUD=C:\Users\Admin\e2_studio\workspace\MAC_Emko\HardwareDebug\\MAC_Emko_c.ud
+-input="MAC_Emko.abs"
+-form=stype
+-output="MAC_Emko.mot"
+-record=s3
+-end_record=s7
+-byte_count=10
+-nologo
+-nomessage
+-exit

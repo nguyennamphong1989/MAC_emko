@@ -1,0 +1,133 @@
+Renesas Optimizing Linker (W3.04.00 )             24-Apr-2023 23:28:16
+
+*** Options ***
+
+-subcommand=LinkerMAC_Emko.tmp
+-MAKEUD=C:\Users\Admin\e2_studio\workspace\MAC_Emko\HardwareDebug/MAC_Emko_l.ud
+-noprelink
+-input=".\src\MAC_Emko.obj"
+-input=".\src/r_fw_up_rx/r_fw_up_rx\r_fw_up_buf.obj"
+-input=".\src/r_fw_up_rx/r_fw_up_rx\r_fw_up_rx.obj"
+-input=".\src/smc_gen/Config_CMT0\Config_CMT0.obj"
+-input=".\src/smc_gen/Config_CMT0\Config_CMT0_user.obj"
+-input=".\src/smc_gen/Config_CMT1\Config_CMT1.obj"
+-input=".\src/smc_gen/Config_CMT1\Config_CMT1_user.obj"
+-input=".\src/smc_gen/Config_ICU\Config_ICU.obj"
+-input=".\src/smc_gen/Config_ICU\Config_ICU_user.obj"
+-input=".\src/smc_gen/Config_MTU0\Config_MTU0.obj"
+-input=".\src/smc_gen/Config_MTU0\Config_MTU0_user.obj"
+-input=".\src/smc_gen/Config_MTU3\Config_MTU3.obj"
+-input=".\src/smc_gen/Config_MTU3\Config_MTU3_user.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT_user.obj"
+-input=".\src/smc_gen/Config_S12AD0\Config_S12AD0.obj"
+-input=".\src/smc_gen/Config_S12AD0\Config_S12AD0_user.obj"
+-input=".\src/smc_gen/Config_SCI1\Config_SCI1.obj"
+-input=".\src/smc_gen/Config_SCI1\Config_SCI1_user.obj"
+-input=".\src/smc_gen/Config_SCI12\Config_SCI12.obj"
+-input=".\src/smc_gen/Config_SCI12\Config_SCI12_user.obj"
+-input=".\src/smc_gen/Config_SCI5\Config_SCI5.obj"
+-input=".\src/smc_gen/Config_SCI5\Config_SCI5_user.obj"
+-input=".\src/smc_gen/general\r_cg_hardware_setup.obj"
+-input=".\src/smc_gen/general\r_smc_cgc.obj"
+-input=".\src/smc_gen/general\r_smc_cgc_user.obj"
+-input=".\src/smc_gen/general\r_smc_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx130\hwsetup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\dbsct.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowlvl.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowsrc.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\mcu_locks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_common.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_cpu.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_locking.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_mcu_startup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_software_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_rx_intrinsic_functions.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\resetprg.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\sbrk.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx130\mcu_clocks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx130\mcu_init.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx130\mcu_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx130\vecttbl.obj"
+-input=".\src/smc_gen/r_flash_rx/src/flash_type_1\r_flash_type1.obj"
+-input=".\src/smc_gen/r_flash_rx/src/flash_type_3\r_flash_type3.obj"
+-input=".\src/smc_gen/r_flash_rx/src/flash_type_4\r_flash_type4.obj"
+-input=".\src/smc_gen/r_flash_rx/src\r_flash_fcu.obj"
+-input=".\src/smc_gen/r_flash_rx/src\r_flash_group.obj"
+-input=".\src/smc_gen/r_flash_rx/src\r_flash_nofcu.obj"
+-input=".\src/smc_gen/r_flash_rx/src\r_flash_rx.obj"
+-input=".\src/smc_gen/r_pincfg\Pin.obj"
+-library=".\MAC_Emko.lib"
+-start=SU,SI,B_1,R_1,B_2,R_2,B,R,RPFRAM,RPFW_UP_RAM/04,C_1,C_2,C,C$*,D*,W*,L,P*/0FFFE0000,FIXEDVECT/0FFFFFF80
+-output="MAC_Emko.abs"
+-form=absolute
+-nomessage
+-vect=_undefined_interrupt_source_isr
+-list=MAC_Emko.map
+-nooptimize
+-rom=D=R,D_1=R_1,D_2=R_2,PFRAM=RPFRAM,PFW_UP_RAM=RPFW_UP_RAM
+-cpu=RAM=00000000-00003fff,FIX=00080000-00083fff,FIX=00086000-00087fff,FIX=00088000-0008dfff,FIX=00090000-0009ffff,FIX=000a0000-000bffff,FIX=000c0000-000fffff,ROM=00100000-00101fff,FIX=007fc000-007fc4ff,FIX=007ffc00-007fffff,ROM=fffe0000-ffffffff
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+SU
+                                  00000004  00000403       400   4
+SI
+                                  00000404  00000503       100   4
+B_1
+                                  00000504  000007b8       2b5   1
+R_1
+                                  000007b9  0000081b        63   1
+B_2
+                                  0000081c  00000d5b       540   2
+R_2
+                                  00000d5c  00000d79        1e   2
+B
+                                  00000d7c  00001a6b       cf0   4
+R
+                                  00001a6c  00001d2b       2c0   4
+RPFRAM
+                                  00001d2c  00002706       9db   1
+RPFW_UP_RAM
+                                  00002707  000028ba       1b4   1
+C_1
+                                  fffe0000  fffe01d1       1d2   1
+C_2
+                                  fffe01d2  fffe05db       40a   2
+C
+                                  fffe05dc  fffe0757       17c   4
+C$DSEC
+                                  fffe0758  fffe077b        24   4
+C$BSEC
+                                  fffe077c  fffe0793        18   4
+C$VECT
+                                  fffe0794  fffe0b93       400   4
+D
+                                  fffe0b94  fffe0e53       2c0   4
+D_1
+                                  fffe0e54  fffe0eb6        63   1
+D_2
+                                  fffe0eb8  fffe0ed5        1e   2
+W
+                                  fffe0ed8  fffe0ed8         0   4
+W_1
+                                  fffe0ed8  fffe0f03        2c   1
+W_2
+                                  fffe0f04  fffe0f13        10   2
+L
+                                  fffe0f14  fffe0fbc        a9   4
+P
+                                  fffe0fbd  fffe77a1      67e5   1
+PFW_UP_RAM
+                                  fffe77a2  fffe7955       1b4   1
+PResetPRG
+                                  fffe7956  fffe79a9        54   1
+PFRAM
+                                  fffe79aa  fffe8384       9db   1
+FIXEDVECT
+                                  ffffff80  ffffffff        80   4

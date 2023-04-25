@@ -1,0 +1,7 @@
+-MAKEUD_LBG="C:\Users\Admin\e2_studio\workspace\MAC_Emko\HardwareDebug\\MAC_Emko_lbg.ud"
+-isa=rxv1
+-nofpu
+-lang=c99
+-head=runtime,math,stdio,stdlib,string,new
+-output="MAC_Emko.lib"
+-nologo
